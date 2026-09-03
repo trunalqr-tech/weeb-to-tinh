@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Love</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         NỀN HIỆU ỨNG TRÁI TIM
+    ================================================== -->
+
+    <canvas id="heartCanvas"></canvas>
+
+
+    <!-- ==================================================
+         MÀN HÌNH TỎ TÌNH
+    ================================================== -->
+
+    <main id="proposalScreen">
+
+        <!-- CÂU TỎ TÌNH -->
+        <div id="question">
+            Em đồng ý làm người yêu của anh nhé?
+        </div>
+
+
+        <!-- KHU VỰC NÚT -->
+        <div id="answerArea">
+
+            <div class="answer-text">
+                Em đồng ý
+            </div>
+
+
+            <div
+                class="hold-button"
+                id="holdButton"
+            >
+
+                <div class="glow-ring ring-1"></div>
+                <div class="glow-ring ring-2"></div>
+                <div class="glow-ring ring-3"></div>
+
+                <div class="button-core">
+                    <span>♥</span>
+                </div>
+
+            </div>
+
+
+            <div
+                id="holdProgress"
+                class="hold-progress"
+            >
+                0%
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==================================================
+         MÀN HÌNH SAU KHI NHẤN GIỮ
+    ================================================== -->
+
+    <section id="successScreen">
+
+        <canvas id="fireworkCanvas"></canvas>
+
+
+        <div class="success-content">
+
+            <div class="people">
+
+                <div class="person person-left">
+
+                    <img
+                        src="images/boy.jpg"
+                        alt=""
+                    >
+
+                    <div class="person-name">
+                        Nguyễn Minh
+                    </div>
+
+                </div>
+
+
+                <div class="success-heart">
+                    ♥
+                </div>
+
+
+                <div class="person person-right">
+
+                    <img
+                        src="images/girl.jpg"
+                        alt=""
+                    >
+
+                    <div class="person-name">
+                        Thuỳ Nhi
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h1>
+                CHÚC MỪNG CẶP ĐÔI
+            </h1>
+
+        </div>
+
+    </section>
+
+<!-- NHẠC NỀN -->
+<audio
+    id="backgroundMusic"
+    src="audio/music.mp3"
+    loop
+    preload="auto"
+></audio>
+
+<script src="script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
